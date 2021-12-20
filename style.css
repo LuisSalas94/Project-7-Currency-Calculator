@@ -1,0 +1,104 @@
+_root {
+	--primary-color: #5fbaa7;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+body {
+	background-color: #f4f4f4;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+h1 {
+	color: var(--primary-color);
+}
+
+p {
+	text-align: center;
+}
+
+.btn {
+	background-color: #5fbaa7;
+	color: #f4f4f4;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	padding: 15px 30px;
+	outline: none;
+}
+
+.money-img {
+	width: 150px;
+}
+
+.currency {
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.currency select {
+	padding: 10px 20px 10px 10px;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	font-size: 16px;
+}
+
+.currency input {
+	border: 0;
+	background: transparent;
+	font-size: 30px;
+	text-align: right;
+}
+
+.swap-rate-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rate {
+	color: var(--primary-color);
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+	outline: 0;
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 55%;
+	}
+
+	.swap-rate-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container .currency {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.currency input {
+		padding-top: 1rem;
+		text-align: center;
+	}
+}
